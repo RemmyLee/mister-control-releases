@@ -1,0 +1,497 @@
+{
+ "v": 1,
+ "updated": "2026-09-02",
+ "items": [
+  {
+   "id": "brickboy-dmg",
+   "kind": "db",
+   "category": "cores",
+   "name": "BrickBoy DMG",
+   "author": "kandowontu",
+   "summary": "Game Boy core with a detailed DMG LCD panel and speaker model.",
+   "homepage": "https://github.com/kandowontu/brickboy-dmg-fpgacore",
+   "db_id": "MultiDatabases/brickboy-dmg",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/brickboy-dmg/db.json"
+  },
+  {
+   "id": "mms2-gb",
+   "kind": "db",
+   "category": "cores",
+   "name": "MMS2 GB Core",
+   "author": "Heber",
+   "summary": "Plays physical Game Boy and Game Boy Color cartridges through the MMS2 cartridge reader. Installs to its own location with a menu shortcut.",
+   "homepage": "https://github.com/Heber-co-uk/Gameboy_MiSTer_Cart",
+   "needs": "An MMS2 cartridge reader",
+   "db_id": "MultiDatabases/mms2-gb",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/mms2-gb/db.json"
+  },
+  {
+   "id": "paprium",
+   "kind": "db",
+   "category": "cores",
+   "name": "Paprium MegaDrive",
+   "author": "Pezz82",
+   "summary": "A Mega Drive core that runs Paprium. Installs the core and launcher only.",
+   "homepage": "https://github.com/MisterPezz82/Paprium_MegaDrive_MiSTer",
+   "needs": "Your own Paprium ROM with its WAV files",
+   "db_id": "MultiDatabases/paprium",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/paprium/db.json"
+  },
+  {
+   "id": "megavgmdrive",
+   "kind": "db",
+   "category": "cores",
+   "name": "MegaVGMDrive",
+   "author": "dai-VGM",
+   "summary": "Mega Drive / Genesis VGM music player core.",
+   "homepage": "https://github.com/dai-VGM/MegaVGMDrive",
+   "db_id": "MultiDatabases/megavgmdrive",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/megavgmdrive/db.json"
+  },
+  {
+   "id": "mister-dvd",
+   "kind": "db",
+   "category": "cores",
+   "name": "MiSTer DVD",
+   "author": "owenb321",
+   "summary": "FPGA DVD-Video player: ISO, VCD and SVCD images, optional physical discs and encrypted ISOs. Menus, subtitles and audio decode in the fabric.",
+   "homepage": "https://github.com/owenb321/MiSTer_DVD",
+   "db_id": "MultiDatabases/mister-dvd",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/mister-dvd/db.json"
+  },
+  {
+   "id": "physical-disc",
+   "kind": "db",
+   "category": "cores",
+   "name": "Physical Disc",
+   "author": "Anime0t4ku",
+   "summary": "A MiSTer main build with physical CD support for selected cores through a USB CD or DVD drive, with MGL launchers. Work in progress: drive compatibility varies.",
+   "homepage": "https://github.com/Anime0t4ku/Main_MiSTer_Physical_Disc",
+   "needs": "A USB CD or DVD drive",
+   "reboot": true,
+   "db_id": "MultiDatabases/physical-disc",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/physical-disc/db.json"
+  },
+  {
+   "id": "3s-arm",
+   "kind": "db",
+   "category": "extras",
+   "name": "3S-ARM",
+   "author": "kimchiman52",
+   "summary": "Street Fighter III: 3rd Strike, a hybrid FPGA and ARM port based on the PS2 version. Installs the program and support files only.",
+   "homepage": "https://github.com/kimchiman52/3s-mister-arm",
+   "needs": "Your own game data",
+   "db_id": "MultiDatabases/3s-arm",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/3s-arm/db.json"
+  },
+  {
+   "id": "dreamster",
+   "kind": "db",
+   "category": "extras",
+   "name": "DreamSTer",
+   "author": "skmp",
+   "summary": "Hybrid FPGA and ARM Dreamcast emulator. Pre-release.",
+   "homepage": "https://github.com/skmp/DreamSTer",
+   "needs": "Your own Dreamcast BIOS and games",
+   "db_id": "MultiDatabases/dreamster",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/dreamster/db.json"
+  },
+  {
+   "id": "duke3d",
+   "kind": "db",
+   "category": "extras",
+   "name": "MiSTer Duke3D",
+   "author": "neofreno",
+   "summary": "Duke Nukem 3D, a hybrid FPGA and ARM port.",
+   "homepage": "https://github.com/neofreno/Mister_Duke3d",
+   "needs": "Your own DUKE3D.GRP",
+   "db_id": "MultiDatabases/duke3d",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/duke3d/db.json"
+  },
+  {
+   "id": "mister-quake",
+   "kind": "db",
+   "category": "extras",
+   "name": "MiSTer Quake",
+   "author": "neofreno",
+   "summary": "Quake, a hybrid FPGA and ARM port.",
+   "homepage": "https://github.com/neofreno/Mister_Quake",
+   "needs": "Your own PAK0.PAK (and PAK1.PAK for the full game)",
+   "db_id": "MultiDatabases/mister-quake",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/mister-quake/db.json"
+  },
+  {
+   "id": "sonic-mania",
+   "kind": "db",
+   "category": "extras",
+   "name": "Sonic Mania MiSTer",
+   "author": "kimchiman52",
+   "summary": "Sonic Mania, a hybrid FPGA and ARM port.",
+   "homepage": "https://github.com/kimchiman52/sonic-mania-mister",
+   "needs": "Your own Data.rsdk from the game",
+   "db_id": "MultiDatabases/sonic-mania",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/sonic-mania/db.json"
+  },
+  {
+   "id": "solarus",
+   "kind": "db",
+   "category": "extras",
+   "name": "Solarus MiSTer",
+   "author": "gmcnaught",
+   "summary": "The Solarus 2D action-RPG engine: Zelda-like games such as Mystery of Solarus DX, Ocean's Heart and Yarntown.",
+   "homepage": "https://github.com/gmcnaught/solarus-mister",
+   "db_id": "MultiDatabases/solarus",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/solarus/db.json"
+  },
+  {
+   "id": "dvd-player",
+   "kind": "db",
+   "category": "extras",
+   "name": "DVD-Player",
+   "author": "joedaniels198512-gif",
+   "summary": "Hybrid DVD-Video player: an FPGA companion core with ARM-side playback and navigation. Physical DVDs and ISOs, menus, subtitles, audio switching, PAL and NTSC.",
+   "homepage": "https://github.com/joedaniels198512-gif/dvd-core",
+   "db_id": "MultiDatabases/dvd-player",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/dvd-player/db.json"
+  },
+  {
+   "id": "mister-disc",
+   "kind": "db",
+   "category": "extras",
+   "name": "MiSTer Disc",
+   "author": "theshaneobrien",
+   "summary": "Seven CD consoles from real discs with the stock cores: autoboot, disc swapping, karaoke, RetroAchievements, on-the-fly translation.",
+   "homepage": "https://github.com/theshaneobrien/mister-disc-drive-support",
+   "needs": "A USB CD drive",
+   "db_id": "MultiDatabases/mister-disc",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/mister-disc/db.json"
+  },
+  {
+   "id": "disc-tools",
+   "kind": "db",
+   "category": "extras",
+   "name": "Disc Tools",
+   "author": "Anime0t4ku",
+   "summary": "Rip and burn physical CDs on the MiSTer: CHD, BIN/CUE, MSU1 and MD+ data discs.",
+   "homepage": "https://github.com/Anime0t4ku/MiSTer-Disc-Tools",
+   "needs": "A USB CD drive",
+   "db_id": "MultiDatabases/disc-tools",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/disc-tools/db.json"
+  },
+  {
+   "id": "misterfin",
+   "kind": "db",
+   "category": "extras",
+   "name": "MiSTerFin",
+   "author": "puddingstudio",
+   "summary": "A Jellyfin media client that runs from the Scripts menu on the menu core and plays server-transcoded media.",
+   "homepage": "https://github.com/puddingstudio/MiSTerFin",
+   "needs": "A Jellyfin server on your network",
+   "db_id": "MultiDatabases/misterfin",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/misterfin/db.json.zip"
+  },
+  {
+   "id": "mister-hifi",
+   "kind": "db",
+   "category": "extras",
+   "name": "MiSTer Hi-Fi",
+   "author": "Anime0t4ku",
+   "summary": "Controller-first music player: FLAC, WAV, MP3, playlists, audio CDs and SMB shares.",
+   "homepage": "https://github.com/Anime0t4ku/MiSTer_Hi-Fi",
+   "db_id": "MultiDatabases/mister-hifi",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/mister-hifi/db.json"
+  },
+  {
+   "id": "collection-launcher",
+   "kind": "db",
+   "category": "extras",
+   "name": "Collection Launcher",
+   "author": "Anime0t4ku",
+   "summary": "Custom game collections with wallpaper and artwork, launched through MGL files.",
+   "homepage": "https://github.com/Anime0t4ku/MiSTer-CollectionLauncher",
+   "db_id": "MultiDatabases/collection-launcher",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/collection-launcher/db.json"
+  },
+  {
+   "id": "sm64-h2x",
+   "kind": "db",
+   "category": "extras",
+   "name": "SM64 H2X",
+   "author": "DavidFallows",
+   "summary": "A 640x240 patch for Super Mario 64 on the N64 core, applied with a BPS file.",
+   "homepage": "https://github.com/DavidFallows/sm64",
+   "needs": "Your own Super Mario 64 ROM",
+   "db_id": "MultiDatabases/sm64-h2x",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/sm64-h2x/db.json"
+  },
+  {
+   "id": "8bit-table-tennis",
+   "kind": "db",
+   "category": "homebrew",
+   "name": "8-Bit Table Tennis",
+   "author": "mike42",
+   "summary": "A homebrew NES table tennis game. Free.",
+   "homepage": "https://github.com/mike42/8bit-table-tennis",
+   "db_id": "MultiDatabases/8bit-table-tennis",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/8bit-table-tennis/db.json"
+  },
+  {
+   "id": "maldita-castilla",
+   "kind": "db",
+   "category": "homebrew",
+   "name": "Maldita Castilla MiSTer",
+   "author": "gmcnaught",
+   "summary": "The action platformer Maldita Castilla as a hybrid FPGA and ARM port, game included.",
+   "homepage": "https://github.com/gmcnaught/maldita.castilla-mister",
+   "db_id": "MultiDatabases/maldita-castilla",
+   "db_url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/maldita-castilla/db.json"
+  },
+  {
+   "id": "ranny-snice-wallpapers",
+   "kind": "db",
+   "category": "wallpapers",
+   "name": "Ranny Snice Wallpapers",
+   "author": "Ranny Snice",
+   "summary": "A collection of menu wallpapers in 16:9. Settings > Updates can switch the filter to 4:3.",
+   "homepage": "https://github.com/Ranny-Snice/Ranny-Snice-Wallpapers",
+   "filter": "ar16-9",
+   "db_id": "Ranny-Snice/Ranny-Snice-Wallpapers",
+   "db_url": "https://raw.githubusercontent.com/Ranny-Snice/Ranny-Snice-Wallpapers/db/db.json.zip"
+  },
+  {
+   "id": "anime0t4ku-wallpapers",
+   "kind": "db",
+   "category": "wallpapers",
+   "name": "Anime0t4ku Wallpapers",
+   "author": "Anime0t4ku",
+   "summary": "A personal menu wallpaper pack.",
+   "homepage": "https://github.com/Anime0t4ku/MiSTerWallpapers",
+   "db_id": "anime0t4ku_wallpapers",
+   "db_url": "https://raw.githubusercontent.com/Anime0t4ku/MiSTerWallpapers/db/db/0t4kuwallpapers.json.zip"
+  },
+  {
+   "id": "pcn-challenge-wallpapers",
+   "kind": "db",
+   "category": "wallpapers",
+   "name": "PCN Challenge Wallpapers",
+   "author": "Pixel Cherry Ninja",
+   "summary": "Wallpapers made during PCN livestreams from audience requests.",
+   "homepage": "https://github.com/Anime0t4ku/MiSTerWallpapers",
+   "db_id": "pcn_challenge_wallpapers",
+   "db_url": "https://raw.githubusercontent.com/Anime0t4ku/MiSTerWallpapers/db/db/pcnchallenge.json.zip"
+  },
+  {
+   "id": "cifs-mount",
+   "kind": "files",
+   "category": "scripts",
+   "name": "cifs_mount",
+   "author": "MiSTer-devel",
+   "summary": "Mount a Windows or NAS share (SMB/CIFS) as games storage, at boot if wanted. Edit the options at the top of the script first.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/cifs_mount.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/cifs_mount.sh",
+     "sha256": "13fd74e35eff15ec3f713be1c5f0fbfdde5011948444e305f868749ccbd6f75b",
+     "size": 26022
+    },
+    {
+     "path": "Scripts/cifs_umount.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/cifs_umount.sh",
+     "sha256": "4928aec030aa4fe3df88eff29224f84ea7b0b567afc8276a0ad74bdc69fc7139",
+     "size": 7627
+    }
+   ]
+  },
+  {
+   "id": "nfs-mount",
+   "kind": "files",
+   "category": "scripts",
+   "name": "nfs_mount",
+   "author": "MiSTer-devel",
+   "summary": "Mount an NFS share as games storage. Edit the options at the top of the script first.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/nfs_mount.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/nfs_mount.sh",
+     "sha256": "a27f3f66a26c0a40132d053ba09d7dd00caada523f85c68a29ce107d1723983f",
+     "size": 8258
+    },
+    {
+     "path": "Scripts/nfs_umount.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/nfs_umount.sh",
+     "sha256": "fee8784ba6e1cce66239842cf95dee8ddd857ef8de840ce80c49ea4f3d2c326a",
+     "size": 1121
+    }
+   ]
+  },
+  {
+   "id": "rclone-saves",
+   "kind": "files",
+   "category": "scripts",
+   "name": "rclone saves sync",
+   "author": "MiSTer-devel",
+   "summary": "Upload and download your saves and config to any cloud storage rclone supports.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer/blob/master/rclone.md",
+   "files": [
+    {
+     "path": "Scripts/rclone.sh.inc",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/rclone.sh.inc",
+     "sha256": "420a7fb9110b16659e899a7a95a7f08b6c29f563f600bf6e3fdf32781a40125d",
+     "size": 2917
+    },
+    {
+     "path": "Scripts/rclone_saves_upload.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/rclone_saves_upload.sh",
+     "sha256": "15b95943f2e6cf9a8a74c3ee01802e1b7b27bbda94185a731c4a839307f322f6",
+     "size": 1209
+    },
+    {
+     "path": "Scripts/rclone_saves_download.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/rclone_saves_download.sh",
+     "sha256": "60984c9c845aaaa1bf02a3e0d9bbc686d1082ea656da7e6d7a0e7486fa1ca05c",
+     "size": 1210
+    },
+    {
+     "path": "Scripts/rclone_config_upload.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/rclone_config_upload.sh",
+     "sha256": "d59aed3a43107679f980995f01f20bb9bc1e0a5ce272ef49fde10969d1509142",
+     "size": 1210
+    },
+    {
+     "path": "Scripts/rclone_config_download.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/rclone_config_download.sh",
+     "sha256": "0b226fc0511bbb8f59f4ccb8cb14d1b3d3773eb17da078d22a8aafdcb0f2e95d",
+     "size": 1211
+    }
+   ]
+  },
+  {
+   "id": "gdrive-saves",
+   "kind": "files",
+   "category": "scripts",
+   "name": "Google Drive saves sync",
+   "author": "MiSTer-devel",
+   "summary": "Upload and download your saves and config to Google Drive.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/gdrive.sh.inc",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/gdrive.sh.inc",
+     "sha256": "9280af8064e3c1c44ece51efb539c986eae20882776d352900ca950e7d5ee9ff",
+     "size": 2517
+    },
+    {
+     "path": "Scripts/gdrive_saves_upload.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/gdrive_saves_upload.sh",
+     "sha256": "6cce37d324669370973f1fc107be3dad384c1aa82dfd457729e0011730b96f3f",
+     "size": 1581
+    },
+    {
+     "path": "Scripts/gdrive_saves_download.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/gdrive_saves_download.sh",
+     "sha256": "c8e8080ba5363503bc9b81197b09699b29ce2587975df50147c3afc1cc229d30",
+     "size": 1581
+    },
+    {
+     "path": "Scripts/gdrive_config_upload.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/gdrive_config_upload.sh",
+     "sha256": "29fd72badd36d70fb833b75eff373fe9bf0844c68980d187b9c289ffd7b2055b",
+     "size": 1507
+    },
+    {
+     "path": "Scripts/gdrive_config_download.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/gdrive_config_download.sh",
+     "sha256": "c33790c4df44beaf2515ef0c19ae24ec580b46a845d14580a068b5f720215f2b",
+     "size": 1507
+    }
+   ]
+  },
+  {
+   "id": "timezone",
+   "kind": "files",
+   "category": "scripts",
+   "name": "timezone",
+   "author": "MiSTer-devel",
+   "summary": "Set the MiSTer's time zone, automatically from your location or by country and city.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/timezone.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/timezone.sh",
+     "sha256": "1c9e7c1fe0adf9c10f79750035998ce4d6e7e265291e055525ab95d2a5013d2e",
+     "size": 2926
+    }
+   ]
+  },
+  {
+   "id": "rtc",
+   "kind": "files",
+   "category": "scripts",
+   "name": "rtc",
+   "author": "MiSTer-devel",
+   "summary": "Set the real-time clock module from Internet time.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/rtc.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/rtc.sh",
+     "sha256": "14a0cfe78862de2826b7fef5448034cab1651ab5d8049a60c0518cf765ced976",
+     "size": 1562
+    }
+   ]
+  },
+  {
+   "id": "core-manager",
+   "kind": "files",
+   "category": "scripts",
+   "name": "core_manager",
+   "author": "MiSTer-devel",
+   "summary": "Pick which cores to keep on the card from the wiki's core list.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/core_manager.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/core_manager.sh",
+     "sha256": "b4a3d7007c47f7ad31ba25a70bcec38b475cca30849884be0ab3e699902ef544",
+     "size": 16268
+    }
+   ]
+  },
+  {
+   "id": "security-fixes",
+   "kind": "files",
+   "category": "scripts",
+   "name": "security_fixes",
+   "author": "MiSTer-devel",
+   "summary": "Change the root password, set up SSH keys and refresh the CA certificates.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/security_fixes.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/security_fixes.sh",
+     "sha256": "ab48068fb7d4e6efe3a22071a808b9f60e5b9529116167f376dc2e6db315a7f4",
+     "size": 17536
+    }
+   ]
+  },
+  {
+   "id": "ini-settings",
+   "kind": "files",
+   "category": "scripts",
+   "name": "ini_settings",
+   "author": "MiSTer-devel",
+   "summary": "Edit MiSTer.ini from a menu on the TV.",
+   "homepage": "https://github.com/MiSTer-devel/Scripts_MiSTer",
+   "files": [
+    {
+     "path": "Scripts/ini_settings.sh",
+     "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/ini_settings.sh",
+     "sha256": "70a991159b9321c3e932607bf386d7831ddd7e04080c49a12577e49f2ec495b9",
+     "size": 49049
+    }
+   ]
+  }
+ ]
+}

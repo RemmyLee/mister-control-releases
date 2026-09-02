@@ -1,0 +1,97 @@
+{
+ "db_id": "mister_control",
+ "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/db.json.zip",
+ "files": {
+  "Scripts/mister-control.sh": {
+   "hash": "0347e4fab09f0dba5ea20864f5206f47",
+   "size": 6606,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control.sh"
+  },
+  "mister-control/data/confstr/GBA.txt": {
+   "hash": "3c9fa00760bbe2ab6e4a9047d7edfb75",
+   "size": 1529,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/GBA.txt"
+  },
+  "mister-control/data/confstr/Genesis.txt": {
+   "hash": "bf21feed09fabda089243c188b8b517a",
+   "size": 1395,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Genesis.txt"
+  },
+  "mister-control/data/confstr/NES.txt": {
+   "hash": "9d4dbe047ba9997ddea7a6aed884da98",
+   "size": 2265,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/NES.txt"
+  },
+  "mister-control/data/confstr/PSX.txt": {
+   "hash": "2d0dbec9777326e5cee3aa7efe4e40fd",
+   "size": 3413,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/PSX.txt"
+  },
+  "mister-control/data/confstr/SNES.txt": {
+   "hash": "e2105cf7e016331f6864466c5aef8408",
+   "size": 1802,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/SNES.txt"
+  },
+  "mister-control/data/confstr/TurboGrafx16.txt": {
+   "hash": "0852bfc89bddddfacdf79cae1fb4c69c",
+   "size": 1274,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/TurboGrafx16.txt"
+  },
+  "mister-control/data/launchbox.db": {
+   "hash": "ff6ee9ecb04fc462ef0abf3a3cad4b4c",
+   "size": 156352512,
+   "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/launchbox.db"
+  },
+  "mister-control/ffmpeg": {
+   "hash": "6493ebc2449955c5c9825bd040aa5d4d",
+   "size": 31793580,
+   "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf"
+  },
+  "mister-control/mister-control": {
+   "hash": "e025c02cc2674b4b73b83fa103fa3c3d",
+   "reboot": true,
+   "size": 13566112,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
+  },
+  "mister-control/restart.sh": {
+   "hash": "89d9de88dea2817c766b73e03f01efff",
+   "size": 1058,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/restart.sh"
+  },
+  "mister-control/run.sh": {
+   "hash": "e3fe786f556ce20b5bf04762cf4b5e3c",
+   "size": 1056,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
+  },
+  "mister-control/web/assets/index-BIYst6b-.js": {
+   "hash": "02ba734bebf4bb38665b4d85781e0c63",
+   "size": 307072,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-BIYst6b-.js"
+  },
+  "mister-control/web/assets/index-Cqnx5kx2.css": {
+   "hash": "eb9d6d5777dc9e39b9f9345bdefedfda",
+   "size": 69618,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-Cqnx5kx2.css"
+  },
+  "mister-control/web/index.html": {
+   "hash": "709ff07b40f35a489f10f66ab909b3e6",
+   "size": 793,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
+  },
+  "mister-control/web/mister.png": {
+   "hash": "50f0d90c5e06007fbcb65d3a72c6ffc2",
+   "size": 40114,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/mister.png"
+  }
+ },
+ "folders": {
+  "Scripts": {},
+  "mister-control": {},
+  "mister-control/data": {},
+  "mister-control/data/confstr": {},
+  "mister-control/web": {},
+  "mister-control/web/assets": {}
+ },
+ "timestamp": 1788391354,
+ "v": 1
+}

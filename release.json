@@ -1,0 +1,16 @@
+{
+  "version": "0.3.0",
+  "date": "2026-09-02",
+  "notes": "First public release: one binary on the MiSTer, live screen, remote play, library, saves, backups, manuals, automation.",
+  "zip_url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/mister-control-0.3.0-armv7.zip",
+  "zip_sha256": "5516ac221f332cb8f1f7058095ab2ad43e12a5ce789cd9a3bc1d9113eed2235b",
+  "zip_size": 5846849,
+  "launchbox_url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/launchbox.db",
+  "launchbox_sha256": "84e918fc5c83114d3eab56caa443e82c19a47dd115e24aa2c2631648f5d7728a",
+  "launchbox_md5": "ff6ee9ecb04fc462ef0abf3a3cad4b4c",
+  "launchbox_size": 156352512,
+  "ffmpeg_url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf",
+  "ffmpeg_sha256": "0afba4a11110e6e402053e0fc14c33a7eb207d7a588688ae87dba471a0f06c71",
+  "ffmpeg_md5": "6493ebc2449955c5c9825bd040aa5d4d",
+  "ffmpeg_size": 31793580
+}

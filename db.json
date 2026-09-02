@@ -3,8 +3,8 @@
  "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/db.json.zip",
  "files": {
   "Scripts/mister-control.sh": {
-   "hash": "0347e4fab09f0dba5ea20864f5206f47",
-   "size": 6606,
+   "hash": "60a9cfb1a0585beeb960a26a8e228d77",
+   "size": 6714,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control.sh"
   },
   "mister-control/data/confstr/GBA.txt": {
@@ -48,9 +48,9 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "e025c02cc2674b4b73b83fa103fa3c3d",
+   "hash": "120ad63343d65fb5499f4c001fe6f5e8",
    "reboot": true,
-   "size": 13566112,
+   "size": 13631648,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
   },
   "mister-control/restart.sh": {
@@ -63,18 +63,18 @@
    "size": 1056,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
   },
-  "mister-control/web/assets/index-BIYst6b-.js": {
-   "hash": "02ba734bebf4bb38665b4d85781e0c63",
-   "size": 307072,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-BIYst6b-.js"
+  "mister-control/web/assets/index-DxEt9efn.js": {
+   "hash": "4e32538bceb490698cc65b099a314a1f",
+   "size": 315383,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DxEt9efn.js"
   },
-  "mister-control/web/assets/index-Cqnx5kx2.css": {
-   "hash": "eb9d6d5777dc9e39b9f9345bdefedfda",
-   "size": 69618,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-Cqnx5kx2.css"
+  "mister-control/web/assets/index-xlUn4JTs.css": {
+   "hash": "a5fee9ca92a2964fbf8835cfc17fe7bc",
+   "size": 72106,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-xlUn4JTs.css"
   },
   "mister-control/web/index.html": {
-   "hash": "709ff07b40f35a489f10f66ab909b3e6",
+   "hash": "5ec94d12e4de8872666e111e86a73c2a",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -92,6 +92,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788391354,
+ "timestamp": 1788393105,
  "v": 1
 }

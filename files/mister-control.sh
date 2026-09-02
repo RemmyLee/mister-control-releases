@@ -9,6 +9,7 @@
 #
 #   sh mister-control.sh            install or update to the latest release
 #   sh mister-control.sh --check    show the installed and latest versions only
+#   sh mister-control.sh --force    reinstall the latest release even when it is installed
 #
 # MC_RELEASE_URL overrides the manifest (a test server, an older release).
 
@@ -84,10 +85,11 @@ if [ "$CUR" = "$LATEST" ] && [ "${1:-}" != "--force" ]; then
 fi
 
 # 1. The release zip: binary, web/, scripts, core-options data.
-fetch "$(field zip_url)" "$WORK/release.zip" "$(field zip_sha256)" "$(field zip_size)"
+ZIP="$WORK/$(basename "$(field zip_url)")"
+fetch "$(field zip_url)" "$ZIP" "$(field zip_sha256)" "$(field zip_size)"
 rm -rf "$WORK/stage"
 mkdir -p "$WORK/stage"
-unzip -oq "$WORK/release.zip" -d "$WORK/stage" || fail "unzip failed"
+unzip -oq "$ZIP" -d "$WORK/stage" || fail "unzip failed"
 [ -f "$WORK/stage/mister-control" ] || fail "the release zip has no mister-control binary"
 [ -f "$WORK/stage/web/index.html" ] || fail "the release zip has no web/index.html"
 

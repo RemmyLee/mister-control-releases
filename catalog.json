@@ -1,7 +1,18 @@
 {
  "v": 1,
- "updated": "2026-09-02",
+ "updated": "2026-09-03",
  "items": [
+  {
+   "id": "mc-nes",
+   "kind": "db",
+   "category": "cores",
+   "name": "MC-NES",
+   "author": "MiSTer Control",
+   "summary": "MiSTer Control's own build of the NES core, installed next to the stock one. It reports the game's memory, registers and controller state to this app every frame: live values on the game sheet and the Home screen. Same games, cheats, saves and settings as the stock NES core.",
+   "homepage": "https://github.com/RemmyLee/MC-NES",
+   "db_id": "mister_control_cores",
+   "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/cores/db.json.zip"
+  },
   {
    "id": "brickboy-dmg",
    "kind": "db",

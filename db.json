@@ -218,7 +218,7 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "65c3bdb53d0074cba078aa9cfae34790",
+   "hash": "a951aa5c032ec4c37624f8d36ddbb5db",
    "reboot": true,
    "size": 13828256,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
@@ -238,13 +238,13 @@
    "size": 73588,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-BaOdBvHn.css"
   },
-  "mister-control/web/assets/index-Y0KU6MWE.js": {
-   "hash": "7319ce357d4c2fe2e45bd0f52291e405",
-   "size": 321212,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-Y0KU6MWE.js"
+  "mister-control/web/assets/index-DFY3krHv.js": {
+   "hash": "51ab6bad2e4c205dc61bc84a2d2c9fe2",
+   "size": 321669,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DFY3krHv.js"
   },
   "mister-control/web/index.html": {
-   "hash": "3e79c17d7d3d6024b2aef07ad65f323f",
+   "hash": "9a40c0547db97f883bdc85c538d9c0f5",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -262,6 +262,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788411798,
+ "timestamp": 1788456339,
  "v": 1
 }

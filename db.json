@@ -48,7 +48,7 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "120ad63343d65fb5499f4c001fe6f5e8",
+   "hash": "4a39d2492dc1cddd81c73ac8cd979e7b",
    "reboot": true,
    "size": 13631648,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
@@ -63,18 +63,18 @@
    "size": 1056,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
   },
-  "mister-control/web/assets/index-DxEt9efn.js": {
-   "hash": "4e32538bceb490698cc65b099a314a1f",
-   "size": 315383,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DxEt9efn.js"
+  "mister-control/web/assets/index-Cjm4B_SI.js": {
+   "hash": "3e2cabadd22d91cb0025c116daa9e1cf",
+   "size": 319616,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-Cjm4B_SI.js"
   },
-  "mister-control/web/assets/index-xlUn4JTs.css": {
-   "hash": "a5fee9ca92a2964fbf8835cfc17fe7bc",
-   "size": 72106,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-xlUn4JTs.css"
+  "mister-control/web/assets/index-DuImkg1a.css": {
+   "hash": "3f6d511b4dc1a76c251b59b7734ecdbd",
+   "size": 73530,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DuImkg1a.css"
   },
   "mister-control/web/index.html": {
-   "hash": "5ec94d12e4de8872666e111e86a73c2a",
+   "hash": "3f3c5e62ace478b62c3f746b61d55711",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -92,6 +92,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788393105,
+ "timestamp": 1788400960,
  "v": 1
 }

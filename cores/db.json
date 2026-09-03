@@ -2,15 +2,15 @@
  "db_id": "mister_control_cores",
  "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/cores/db.json.zip",
  "files": {
-  "_Console/MC-NES_20260903.rbf": {
-   "hash": "40fa7287344f224749401ed52b0f3d8b",
-   "size": 3312300,
-   "url": "https://raw.githubusercontent.com/RemmyLee/MC-NES/47a928912dd5bfae3703c64cccc7d2a839ae9cd9/releases/MC-NES_20260903.rbf"
+  "_Console/MC-NES_20260903g.rbf": {
+   "hash": "6a791dc71c4e842d4fb67d504e61b8f1",
+   "size": 3303136,
+   "url": "https://raw.githubusercontent.com/RemmyLee/MC-NES/e292f6688ab3f50e2e4c17d9c38fd3e18ce2bd46/releases/MC-NES_20260903g.rbf"
   }
  },
  "folders": {
   "_Console": {}
  },
- "timestamp": 1788466079,
+ "timestamp": 1788478626,
  "v": 1
 }

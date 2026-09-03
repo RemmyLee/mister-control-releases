@@ -1,4 +1,5 @@
 # MiSTer Control
+<img width="2940" height="1674" alt="image" src="https://github.com/user-attachments/assets/ab0744d4-6a22-4488-81be-0654c5f7045f" />
 
 The second screen and controller for the MiSTer FPGA. One program runs on the MiSTer
 itself and serves a web app to any phone, tablet or computer on your network: see the TV

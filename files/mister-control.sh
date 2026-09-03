@@ -161,6 +161,21 @@ if [ -f "$INI" ] && ! grep -q '^[[:space:]]*log_file_entry[[:space:]]*=[[:space:
 	echo "MiSTer.ini: set log_file_entry=1 (backup: MiSTer.ini.mister-control.bak)"
 fi
 
+# 6b. debug=2 makes the firmware write its own printf output to /tmp/debug.txt
+#     (cfg.cpp:436-443). The app reads that file to confirm a cheat toggle. It
+#     applies at the next core load. Same backup rule as above.
+if [ -f "$INI" ] && ! grep -q '^[[:space:]]*debug[[:space:]]*=[[:space:]]*2[[:space:]]*$' "$INI"; then
+	[ -f "$INI.mister-control.bak" ] || cp -f "$INI" "$INI.mister-control.bak"
+	if grep -q '^[[:space:]]*debug[[:space:]]*=' "$INI"; then
+		sed -i 's/^[[:space:]]*debug[[:space:]]*=.*$/debug=2/' "$INI"
+	elif grep -q '^\[MiSTer\]' "$INI"; then
+		sed -i 's/^\[MiSTer\]\r\{0,1\}$/&\ndebug=2/' "$INI"
+	else
+		printf '\ndebug=2\n' >> "$INI"
+	fi
+	echo "MiSTer.ini: set debug=2 (backup: MiSTer.ini.mister-control.bak)"
+fi
+
 # 7. Start (or restart) the service.
 sh "$DIR/restart.sh"
 

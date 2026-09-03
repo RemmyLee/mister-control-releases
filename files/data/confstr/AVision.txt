@@ -1,0 +1,1 @@
+AVision;;-;F1,BIN,Load Game;-;O89,Aspect ratio,Original,Full Screen,[ARC1],[ARC2];O46,Scandoubler Fx,None,HQ2x,CRT 25%,CRT 50%,CRT 75%;O23,Scale,Normal,V-Integer,Narrower HV-Integer,Wider HV-Integer;-;O1,Simulate Mirror,Off,On;O7,Custom Palette,Off,On;D0FC3,GBP,Load Palette;-;R0,Reset;J1,1,2,3,4;jn,X,A,B,Y;jp,X,A,B,Y;;V,v

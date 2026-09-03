@@ -22,9 +22,11 @@ This repository holds the downloads. The application source is not published.
 
 The installer downloads the current release, checks it, installs to
 `/media/fat/mister-control/`, starts the app now and at every boot
-(`/media/fat/linux/user-startup.sh`), and sets `log_file_entry=1` in `MiSTer.ini`
-(backup: `MiSTer.ini.mister-control.bak`). That setting makes the MiSTer write the
-running game's path to `/tmp`, which is how the app knows what is playing.
+(`/media/fat/linux/user-startup.sh`), and sets two keys in `MiSTer.ini` (backup:
+`MiSTer.ini.mister-control.bak`): `log_file_entry=1` makes the MiSTer write the running
+game's path to `/tmp`, which is how the app knows what is playing; `debug=2` makes the
+MiSTer write its own messages to `/tmp/debug.txt`, which the app reads to confirm that a
+cheat switch really went on. Both apply at the next core load.
 
 The first install also downloads the offline game catalogue (150 MB) and a static
 ffmpeg for live broadcasting (32 MB). Both are kept across updates.

@@ -3,39 +3,209 @@
  "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/db.json.zip",
  "files": {
   "Scripts/mister-control.sh": {
-   "hash": "60a9cfb1a0585beeb960a26a8e228d77",
-   "size": 6714,
+   "hash": "84e2aeb953ef0d7961a296eabf34818c",
+   "size": 7452,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control.sh"
+  },
+  "mister-control/data/confstr/ATARI2600.txt": {
+   "hash": "f49ee034fcae5200680362c02783b97e",
+   "size": 640,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/ATARI2600.txt"
+  },
+  "mister-control/data/confstr/ATARI7800.txt": {
+   "hash": "7b2178116d06770178407f9924ec1dd0",
+   "size": 2144,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/ATARI7800.txt"
+  },
+  "mister-control/data/confstr/AVision.txt": {
+   "hash": "0d83371d07b3c43c60f3a05b877114fa",
+   "size": 324,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/AVision.txt"
+  },
+  "mister-control/data/confstr/Adam.txt": {
+   "hash": "82a4d137c4f2952e3f5df280737c340d",
+   "size": 547,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Adam.txt"
+  },
+  "mister-control/data/confstr/Astrocade.txt": {
+   "hash": "12b4148816b23ca60777a1d8d0f2a2fa",
+   "size": 416,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Astrocade.txt"
+  },
+  "mister-control/data/confstr/AtariLynx.txt": {
+   "hash": "ae403d8fd8c301c447ebe142d3a29da2",
+   "size": 1232,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/AtariLynx.txt"
+  },
+  "mister-control/data/confstr/AtariLynx_20260129.txt": {
+   "hash": "ae403d8fd8c301c447ebe142d3a29da2",
+   "size": 1232,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/AtariLynx_20260129.txt"
+  },
+  "mister-control/data/confstr/CD-i.txt": {
+   "hash": "fe6402cfc5bed2eed0d1324727f82f67",
+   "size": 1165,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/CD-i.txt"
+  },
+  "mister-control/data/confstr/Coleco.txt": {
+   "hash": "706dccb33785d998fdf269fdd8be9514",
+   "size": 348,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Coleco.txt"
+  },
+  "mister-control/data/confstr/CreatiVision.txt": {
+   "hash": "de99e970f83216788d4f7742e1ab9053",
+   "size": 698,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/CreatiVision.txt"
+  },
+  "mister-control/data/confstr/GAMEBOY.txt": {
+   "hash": "a99a989d441a056c340fca84048f37cf",
+   "size": 1759,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/GAMEBOY.txt"
+  },
+  "mister-control/data/confstr/GAMEBOY_20260603.txt": {
+   "hash": "a99a989d441a056c340fca84048f37cf",
+   "size": 1759,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/GAMEBOY_20260603.txt"
   },
   "mister-control/data/confstr/GBA.txt": {
    "hash": "3c9fa00760bbe2ab6e4a9047d7edfb75",
    "size": 1529,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/GBA.txt"
   },
+  "mister-control/data/confstr/GBA_20260530.txt": {
+   "hash": "3c9fa00760bbe2ab6e4a9047d7edfb75",
+   "size": 1529,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/GBA_20260530.txt"
+  },
+  "mister-control/data/confstr/Gamate.txt": {
+   "hash": "516f4536ecf74a36cce722f9ad5cf929",
+   "size": 342,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Gamate.txt"
+  },
+  "mister-control/data/confstr/Game and Watch.txt": {
+   "hash": "7027289bad8ee6c9a60f2a8eaa791973",
+   "size": 493,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Game and Watch.txt"
+  },
   "mister-control/data/confstr/Genesis.txt": {
    "hash": "bf21feed09fabda089243c188b8b517a",
    "size": 1395,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Genesis.txt"
+  },
+  "mister-control/data/confstr/Genesis_20210725.txt": {
+   "hash": "89934175057004cfff3734981ea80a8c",
+   "size": 1365,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Genesis_20210725.txt"
+  },
+  "mister-control/data/confstr/Laser.txt": {
+   "hash": "4e9b277aa214befd5f3773161e70bf11",
+   "size": 219,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Laser.txt"
+  },
+  "mister-control/data/confstr/MegaCD.txt": {
+   "hash": "9b964587366d43dff35193fcf7a635b8",
+   "size": 1547,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/MegaCD.txt"
+  },
+  "mister-control/data/confstr/MegaCD_20260603.txt": {
+   "hash": "9b964587366d43dff35193fcf7a635b8",
+   "size": 1547,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/MegaCD_20260603.txt"
+  },
+  "mister-control/data/confstr/N64.txt": {
+   "hash": "4045464f2c871965c91f2eaa66116ded",
+   "size": 2898,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/N64.txt"
+  },
+  "mister-control/data/confstr/N64_20260726.txt": {
+   "hash": "4045464f2c871965c91f2eaa66116ded",
+   "size": 2898,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/N64_20260726.txt"
   },
   "mister-control/data/confstr/NES.txt": {
    "hash": "9d4dbe047ba9997ddea7a6aed884da98",
    "size": 2265,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/NES.txt"
   },
+  "mister-control/data/confstr/NES_20260603.txt": {
+   "hash": "e2df4ac5e997e114aa59587401b43c3f",
+   "size": 2030,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/NES_20260603.txt"
+  },
+  "mister-control/data/confstr/ODYSSEY2.txt": {
+   "hash": "7ce98f73ca1fd946c669ae20b5bd3a40",
+   "size": 449,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/ODYSSEY2.txt"
+  },
   "mister-control/data/confstr/PSX.txt": {
    "hash": "2d0dbec9777326e5cee3aa7efe4e40fd",
    "size": 3413,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/PSX.txt"
+  },
+  "mister-control/data/confstr/PSX_20260807.txt": {
+   "hash": "2d0dbec9777326e5cee3aa7efe4e40fd",
+   "size": 3413,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/PSX_20260807.txt"
+  },
+  "mister-control/data/confstr/SMS.txt": {
+   "hash": "68d4b2b2d8e55d3c5b526c5a6cb4a447",
+   "size": 1878,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/SMS.txt"
+  },
+  "mister-control/data/confstr/SMS_20260603.txt": {
+   "hash": "0d83ad63357401825c6cfc28cc154188",
+   "size": 1829,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/SMS_20260603.txt"
   },
   "mister-control/data/confstr/SNES.txt": {
    "hash": "e2105cf7e016331f6864466c5aef8408",
    "size": 1802,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/SNES.txt"
   },
-  "mister-control/data/confstr/TurboGrafx16.txt": {
+  "mister-control/data/confstr/SNES_20260603.txt": {
+   "hash": "fc654f194170c1fcac910adc63a15f49",
+   "size": 1802,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/SNES_20260603.txt"
+  },
+  "mister-control/data/confstr/Saturn.txt": {
+   "hash": "13808cd05f6cabbf4f415b4e617a4e16",
+   "size": 1731,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Saturn.txt"
+  },
+  "mister-control/data/confstr/Spectrum.txt": {
+   "hash": "80694076a91b02c752e0c4904a363c8f",
+   "size": 1317,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/Spectrum.txt"
+  },
+  "mister-control/data/confstr/SuperVision8000.txt": {
+   "hash": "6352929f2ddde6f99a5bb413a6d2dadb",
+   "size": 189,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/SuperVision8000.txt"
+  },
+  "mister-control/data/confstr/TGFX16.txt": {
    "hash": "0852bfc89bddddfacdf79cae1fb4c69c",
    "size": 1274,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/TurboGrafx16.txt"
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/TGFX16.txt"
+  },
+  "mister-control/data/confstr/TGFX16_20260603.txt": {
+   "hash": "48a6c817824984e38a85abf8ec6cd841",
+   "size": 1230,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/TGFX16_20260603.txt"
+  },
+  "mister-control/data/confstr/VECTOR06.txt": {
+   "hash": "ab2f81f71203babac1981f98f52bc71b",
+   "size": 414,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/VECTOR06.txt"
+  },
+  "mister-control/data/confstr/VECTREX.txt": {
+   "hash": "62d20278632084a3f976c5bbe5e3bb36",
+   "size": 501,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/VECTREX.txt"
+  },
+  "mister-control/data/confstr/WonderSwan.txt": {
+   "hash": "ea156d9de18d4264ca581e19f9e20e1b",
+   "size": 1537,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/confstr/WonderSwan.txt"
   },
   "mister-control/data/launchbox.db": {
    "hash": "ff6ee9ecb04fc462ef0abf3a3cad4b4c",
@@ -48,9 +218,9 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "4a39d2492dc1cddd81c73ac8cd979e7b",
+   "hash": "65c3bdb53d0074cba078aa9cfae34790",
    "reboot": true,
-   "size": 13631648,
+   "size": 13828256,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
   },
   "mister-control/restart.sh": {
@@ -63,18 +233,18 @@
    "size": 1056,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
   },
-  "mister-control/web/assets/index-Cjm4B_SI.js": {
-   "hash": "3e2cabadd22d91cb0025c116daa9e1cf",
-   "size": 319616,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-Cjm4B_SI.js"
+  "mister-control/web/assets/index-BaOdBvHn.css": {
+   "hash": "4a3d525f82fce95e9adc795a484ab0c2",
+   "size": 73588,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-BaOdBvHn.css"
   },
-  "mister-control/web/assets/index-DuImkg1a.css": {
-   "hash": "3f6d511b4dc1a76c251b59b7734ecdbd",
-   "size": 73530,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DuImkg1a.css"
+  "mister-control/web/assets/index-Y0KU6MWE.js": {
+   "hash": "7319ce357d4c2fe2e45bd0f52291e405",
+   "size": 321212,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-Y0KU6MWE.js"
   },
   "mister-control/web/index.html": {
-   "hash": "3f3c5e62ace478b62c3f746b61d55711",
+   "hash": "3e79c17d7d3d6024b2aef07ad65f323f",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -92,6 +262,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788400960,
+ "timestamp": 1788411798,
  "v": 1
 }

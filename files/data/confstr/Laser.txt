@@ -1,0 +1,1 @@
+Laser;;-;F1,VZ ,Load VZ Image;-;O89,Aspect ratio,Original,Full Screen,[ARC1],[ARC2];O24,Scandoubler Fx,None,HQ2x,CRT 25%,CRT 50%,CRT 75%;O5,Turbo,Off,On;O6,Dos Rom,Off,On;O7,SHRG,Off,On;-;R0,Reset;J,Fire 1,Button 2;V,v

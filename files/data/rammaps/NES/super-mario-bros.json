@@ -1,0 +1,85 @@
+{
+  "system": "NES",
+  "title": "Super Mario Bros.",
+  "crc": [
+    "d445f698"
+  ],
+  "source": "https://datacrystal.tcrf.net/wiki/Super_Mario_Bros./RAM_map",
+  "verified": "2026-09-03",
+  "fields": [
+    {
+      "name": "world",
+      "addr": "0x075F",
+      "add": 1,
+      "label": "World"
+    },
+    {
+      "name": "level",
+      "addr": "0x0760",
+      "add": 1,
+      "label": "Level"
+    },
+    {
+      "name": "lives",
+      "addr": "0x075A",
+      "label": "Lives"
+    },
+    {
+      "name": "coins",
+      "addr": "0x075E",
+      "label": "Coins"
+    },
+    {
+      "name": "score",
+      "addr": "0x07DD",
+      "size": 6,
+      "enc": "digits",
+      "label": "Score (x10)",
+      "pad": 5
+    },
+    {
+      "name": "timer",
+      "addr": "0x07F8",
+      "size": 3,
+      "enc": "digits",
+      "label": "Time"
+    },
+    {
+      "name": "power",
+      "addr": "0x0756",
+      "label": "Power",
+      "names": {
+        "0": "small",
+        "1": "big",
+        "2": "fire"
+      }
+    },
+    {
+      "name": "mode",
+      "addr": "0x0770",
+      "label": "Game mode",
+      "names": {
+        "0": "title",
+        "1": "playing",
+        "2": "victory",
+        "3": "game over"
+      }
+    },
+    {
+      "name": "xpage",
+      "addr": "0x006D",
+      "label": "X page"
+    },
+    {
+      "name": "xscreen",
+      "addr": "0x0086",
+      "label": "X on screen"
+    }
+  ],
+  "lines": [
+    "World {world}-{level}",
+    "{lives} lives, {coins} coins",
+    "Score {score}0, time {timer}"
+  ],
+  "notes": "Checked on MC-NES_20260903b against the TV picture 2026-09-03: world and level (1-1 from 0/0, +1), lives (card x3 read 2, x2 read 1: stored minus one), coins (0), timer (five readings 398..129), mode (0 title/demo, 1 playing), xpage/xscreen (0/40 at the start, 1/41 while walking). Score was not exercised (no points scored); its digits come from the map only. $075A is the current player's lives; in a 2 player game Luigi is controller 2."
+}

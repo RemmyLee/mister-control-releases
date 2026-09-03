@@ -212,13 +212,18 @@
    "size": 156352512,
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/launchbox.db"
   },
+  "mister-control/data/rammaps/NES/super-mario-bros.json": {
+   "hash": "d93866b256cf3b74a3a5ccd3cbaa01cd",
+   "size": 1962,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/rammaps/NES/super-mario-bros.json"
+  },
   "mister-control/ffmpeg": {
    "hash": "6493ebc2449955c5c9825bd040aa5d4d",
    "size": 31793580,
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.3.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "a951aa5c032ec4c37624f8d36ddbb5db",
+   "hash": "d7246fcacd5d9998bafef5de5a909b01",
    "reboot": true,
    "size": 13828256,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
@@ -233,18 +238,18 @@
    "size": 1056,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
   },
-  "mister-control/web/assets/index-BaOdBvHn.css": {
-   "hash": "4a3d525f82fce95e9adc795a484ab0c2",
-   "size": 73588,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-BaOdBvHn.css"
+  "mister-control/web/assets/index-D3wKbr9Y.css": {
+   "hash": "24f4c775fbdb8cbf623560c9c8aba136",
+   "size": 74082,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-D3wKbr9Y.css"
   },
-  "mister-control/web/assets/index-DFY3krHv.js": {
-   "hash": "51ab6bad2e4c205dc61bc84a2d2c9fe2",
-   "size": 321669,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DFY3krHv.js"
+  "mister-control/web/assets/index-yeDzsx7a.js": {
+   "hash": "1303fb15da335d6df38f69229d6e9139",
+   "size": 328554,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-yeDzsx7a.js"
   },
   "mister-control/web/index.html": {
-   "hash": "9a40c0547db97f883bdc85c538d9c0f5",
+   "hash": "41c9647b1aa009a75eeaddc53393e2c4",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -259,9 +264,11 @@
   "mister-control": {},
   "mister-control/data": {},
   "mister-control/data/confstr": {},
+  "mister-control/data/rammaps": {},
+  "mister-control/data/rammaps/NES": {},
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788456339,
+ "timestamp": 1788466357,
  "v": 1
 }

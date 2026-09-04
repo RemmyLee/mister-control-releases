@@ -2,9 +2,9 @@
 
 A second screen and controller for the [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/).
 One program runs on the MiSTer and serves a web app to any phone, tablet or computer on your
-network. It shows the TV picture live on the phone, gives you a touch gamepad, launches games from
-your library with box art, and manages saves, cheats, screenshots and manuals. Nothing is
-installed on a PC. There is no account and no cloud service.
+network. You watch the TV picture live on your phone, play with a touch gamepad, and launch any
+game from your library with its box art. It also handles your saves, cheats, screenshots and
+manuals. Nothing gets installed on a PC. There is no account and no cloud service.
 
 ![Home on a laptop](shots/home-desktop.png)
 
@@ -60,18 +60,21 @@ with Capture and Clip buttons on the picture.
 
 ### Library
 
-Every system on the card with box art, year, publisher and genre. Search, filter by letter,
-region, genre, decade or players, mark favorites, and build collections. Art comes from an offline
-catalogue that ships with the app; scrape ScreenScraper with your own account for the rest.
+Browse every system on your card. Games show their box art, along with the year, publisher and
+genre. You can search, star the ones you like, and group games into collections. There are filters
+for the first letter, the region, the genre, the decade, and the number of players. Most of the box
+art is already there offline. If a game is missing its art, pull it from ScreenScraper with your
+own account.
 
 <img src="shots/library-tas-filter-phone.png" width="270" alt="Library with box art and filters">
 
 ### Game sheet
 
-Long press any game for its sheet: launch or restart, favorite, add to a collection, put a
-shortcut in the TV menu, edit the entry, and follow links to GameFAQs, StrategyWiki, Wikipedia and
-a longplay video. For a running game it also shows suspend points (the core's save state slots,
-saved and loaded from the phone), cheats, core options, and play activity.
+Long press a game to open its sheet. From here you can launch or restart it, star it, add it to a
+collection, pin a shortcut to the TV menu, or fix its title and year. There are links out to
+GameFAQs, StrategyWiki, Wikipedia and a longplay video. While a game is running, the sheet also
+holds its save state slots (save and load them from the phone), its cheats, its core options, and
+how long you have played it.
 
 <img src="shots/gamesheet-cheats-phone.png" width="270" alt="Cheat switches on the game sheet"> <img src="shots/gamesheet-live-phone.png" width="270" alt="Live machine state on the game sheet">
 

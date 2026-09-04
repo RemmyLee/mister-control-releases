@@ -49,10 +49,10 @@ on the picture.
 
 ### Library
 
-Every system on your card, each game with its box art. Search it, set favorites, and make your own
-collections. A row of filters narrows a big system down (by letter, region, genre, decade, or player
-count). Most box art is included offline. If a game has no cover, the app can fetch it from
-ScreenScraper with your account.
+The Library has every system on your card, and each game shows its box art. You can search a system
+and star the games you like. Games can be grouped into collections you name. Filters down the side
+narrow a big system when you need them. Box art is included offline, and the app can fetch a missing
+cover from ScreenScraper with your account.
 
 <img src="shots/library-tas-filter-phone.png" width="270" alt="Library">
 

@@ -30,33 +30,33 @@ PIN.
 
 ## Features
 
-**Home** — the running game live in the tile, plus recent games. Tap to launch. On an MC core, the
+**Home**: the running game live in the tile, plus recent games. Tap to launch. On an MC core, the
 tile shows game state (lives, score).
 
 <img src="shots/home-playing-phone.png" width="270" alt="Home with the live game in the tile">
 
-**Play** — tap the running game for a touch gamepad under the live picture, with Capture and Clip.
+**Play**: tap the running game for a touch gamepad under the live picture, with Capture and Clip.
 
 <img src="shots/controller-phone.png" width="270" alt="Touch gamepad">
 
-**Library** — every system with box art, year, publisher, genre. Search, favorites, collections.
+**Library**: every system with box art, year, publisher, genre. Search, favorites, collections.
 Filters: letter, region, genre, decade, players. Art ships offline; missing covers scrape from
 ScreenScraper with your account.
 
 <img src="shots/library-tas-filter-phone.png" width="270" alt="Library">
 
-**Game sheet** (long press) — launch/restart, favorite, collection, TV-menu shortcut, edit
+**Game sheet** (long press): launch/restart, favorite, collection, TV-menu shortcut, edit
 title/year, links to GameFAQs/StrategyWiki/Wikipedia/longplay. While running: save state slots,
 cheats, core options, play time.
 
 <img src="shots/gamesheet-cheats-phone.png" width="270" alt="Cheats"> <img src="shots/gamesheet-live-phone.png" width="270" alt="Live state">
 
-**MC-NES** (from Install) — our NES core beside the stock one, same games/saves/cheats. Reports work
+**MC-NES** (from Install): our NES core beside the stock one, same games/saves/cheats. Reports work
 RAM, CPU registers, and controller reads every frame. Feeds the live values on Home and the sheet.
 
 <img src="shots/settings-install-phone.png" width="270" alt="Install MC-NES">
 
-**TAS playback** — on MC-NES, play a TASVideos run on the TV. The app matches your ROM by checksum
+**TAS playback**: on MC-NES, play a TASVideos run on the TV. The app matches your ROM by checksum
 to the [TASVideos](https://tasvideos.org) version, lists its runs, downloads the one you pick, and
 the core plays it frame by frame. The Library flags games with a matching run. Your own `.fm2` files
 work too.

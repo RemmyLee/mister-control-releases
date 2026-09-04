@@ -1,128 +1,130 @@
 # MiSTer Control
 
-Web-based second screen and controller for the [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/).
-One binary runs on the MiSTer and serves a web app on your LAN. Open it on a phone to watch the game
-live and play with a touch pad. Your library is there too. Nothing is installed on a PC. There is no
-account and no cloud service.
+MiSTer Control is a web app that runs on the MiSTer FPGA itself. You open it in a browser on your
+phone or computer. It shows the TV picture live and doubles as a controller. It also manages your
+game library. Nothing gets installed on a PC and nothing talks to an outside service.
 
 ![Home on a laptop](shots/home-desktop.png)
 
-Downloads only. The app source is not public.
+This repo has the downloads. The app source is not public.
 
 ## Install
 
-1. Copy `mister-control.sh` (in the file list above) to `/media/fat/Scripts/` on the MiSTer.
-2. On the TV, run it from the Scripts menu. Over SSH: `sh /media/fat/Scripts/mister-control.sh`
-3. It installs itself, then prints the address to open.
+1. Copy `mister-control.sh` from this repo to `/media/fat/Scripts/` on the MiSTer.
+2. Run it from the Scripts menu on the TV, or over SSH: `sh /media/fat/Scripts/mister-control.sh`
+3. When it finishes it prints the address of the web app.
 
-The installer puts the app in `/media/fat/mister-control/` and starts it on every boot. It sets two
-keys in `MiSTer.ini` and keeps a backup at `MiSTer.ini.mister-control.bak`. `log_file_entry=1` lets
-the app read which game is running. `debug=2` lets it confirm when a cheat turns on. Both take effect
-at the next core load. The first run also downloads the game catalogue (about 150 MB) and a copy of
-ffmpeg for broadcasting (about 32 MB).
+The installer puts the app in `/media/fat/mister-control/` and registers it to start at boot. It
+changes two settings in `MiSTer.ini` and saves a backup first. `log_file_entry=1` makes the MiSTer
+record which game is running. `debug=2` makes the MiSTer write the log the app uses to verify
+cheats. Both apply on the next core load. The first install also downloads the offline game
+database (about 150 MB) and ffmpeg (about 32 MB).
 
 ## Accessing the web app
 
-The app runs on port 8110. On a browser on the same network, go to `http://<MiSTer-IP>:8110`, for
-example `http://192.168.1.50:8110`. The install script and the MiSTer menu both show the IP. Inside
-the app, Settings > Network and access puts a QR code on the TV. "Add to Home Screen" runs it full
-screen.
+The app listens on port 8110. Open `http://<MiSTer-IP>:8110` in a browser on the same network. The
+installer prints the address, and Settings > Network and access can show it as a QR code on the TV.
+Your browser's "Add to Home Screen" makes it act like an installed app.
 
-If you share the network with other people, set a token with `-token` or `MC_TOKEN` in `run.sh`. A
-phone then pairs once with a 6-digit PIN.
+If other people use your network, set a token with `-token` or `MC_TOKEN` in `run.sh`. Each device
+then has to enter a 6-digit PIN once.
 
 ## Features
 
 ### Home
 
-The game you are playing shows live inside its tile, with your recent games beside it. Tap one to
-launch it. On an MC core the tile also shows the game's own state, such as your current lives.
+The home screen shows the game that is currently running, with live video inside the tile. Recent
+games are next to it and tapping one launches it. When the game runs on an MC core, the tile also
+shows information read from inside the game, like your remaining lives.
 
 <img src="shots/home-playing-phone.png" width="270" alt="Home with the live game in the tile">
 
 ### Play on your phone
 
-Tap the running game and a touch gamepad opens under the live picture. Capture and Clip buttons sit
-on the picture.
+Tapping the running game opens a touch controller with the live video above it. Buttons on the
+video take a screenshot or record a clip.
 
 <img src="shots/controller-phone.png" width="270" alt="Touch gamepad">
 
 ### Library
 
-The Library has every system on your card, and each game shows its box art. You can search a system
-and star the games you like. Games can be grouped into collections you name. Filters down the side
-narrow a big system when you need them. Box art is included offline, and the app can fetch a missing
-cover from ScreenScraper with your account.
+The library lists every system on your SD card with box art for each game. It has search and
+favorites, and games can be grouped into collections. Filters narrow big systems down. The box art
+comes from an offline database, and missing covers can be fetched from ScreenScraper if you have an
+account there.
 
 <img src="shots/library-tas-filter-phone.png" width="270" alt="Library">
 
 ### Game sheet
 
-Long-press a game to open its sheet. From there you can:
+Holding down on a game opens its detail page, where you can:
 
-- Launch or restart it, favorite it, or add it to a collection
-- Pin a shortcut to the TV menu, or fix a wrong title or year
-- Open a longplay or the game's page on GameFAQs, StrategyWiki, or Wikipedia
+- launch or restart it
+- mark it as a favorite or put it in a collection
+- add a shortcut for it to the TV menu
+- correct its title or year
+- open GameFAQs, StrategyWiki, Wikipedia, or a longplay video
 
-While the game runs, the sheet also holds its save state slots (saved and loaded from your phone),
-its cheats, its core options, and your play time.
+While the game is running, the page also shows the save state slots, the cheats, the core options,
+and your play time.
 
 <img src="shots/gamesheet-cheats-phone.png" width="270" alt="Cheats"> <img src="shots/gamesheet-live-phone.png" width="270" alt="Live state">
 
 ### MC-NES
 
-Our own build of the NES core, added from Settings > Install. It uses the same game folder as the
-stock core. It sends the game's RAM and register state to the app on every frame, which powers the
-live values on Home and the game sheet.
+MC-NES is our own build of the NES core, installed from Settings > Install. It behaves like the
+stock core and reads the same game folder. The difference is that it streams the console's internal
+state to the app once per frame. That is where the live game info on the home screen comes from.
 
 <img src="shots/settings-install-phone.png" width="270" alt="Install MC-NES">
 
 ### TAS playback
 
-On MC-NES the FPGA can play a TASVideos run on your TV. The app takes the checksum of your ROM and
-finds the matching version on [TASVideos](https://tasvideos.org), then lists the runs published for
-it. Pick one and it downloads to the card, and the core plays it back frame by frame. The Library
-flags any game you own that has a matching run. Your own `.fm2` files work too.
+With MC-NES installed, the app can play back tool-assisted speedruns from
+[TASVideos](https://tasvideos.org) on the real hardware. It identifies your exact ROM by checksum
+and lists the published runs for it. A run you pick is downloaded to the SD card and played back
+frame by frame in the core. Games with an available run get a TAS badge in the library. You can
+also upload your own `.fm2` files.
 
 <img src="shots/gamesheet-tasvideos-phone.png" width="270" alt="TASVideos runs">
 
 ### Everything else
 
-- **Album** for the screenshots the MiSTer took and the clips you grabbed
-- **Manuals** downloaded one at a time, only when you ask
-- **Saves** you can pull off the card or push back on
-- **Install** for cores, homebrew, wallpaper, and scripts, through the MiSTer's own downloader
-- **TV menu editor** for the folders and shortcuts on the TV
-- **Quick settings** on a hold of the Home button, without leaving the game
-- **Music**, **wallpaper**, **backups**, **automation**, and a broadcast to an RTMP URL
+- Album for the MiSTer's screenshots and your recorded clips
+- Game manuals, downloaded per game on request
+- SRAM save download and upload
+- Install catalog for cores, homebrew, wallpapers, and scripts, through the MiSTer's own downloader
+- TV menu editor
+- Quick settings panel on holding the Home button
+- Music player, wallpapers, backups, automation, RTMP broadcasting
 
 <img src="shots/play-activity-phone.png" width="270" alt="Play activity"> <img src="shots/album-phone.png" width="270" alt="Album"> <img src="shots/quick-settings-phone.png" width="270" alt="Quick settings">
 
-## Update
+## Updating
 
-- In the app: Settings > About > Install. It checks here every hour.
-- From the Scripts menu: run `mister-control` again.
-- With update_all: turn it on in Settings > About, or add this to `downloader.ini`:
+- From the app: Settings > About > Install. It checks for new versions hourly.
+- Run `mister-control` from the Scripts menu again.
+- Through update_all: enable it in Settings > About, or add this to `downloader.ini`:
 
 ```ini
 [mister_control]
 db_url = 'https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/db.json.zip'
 ```
 
-## Contents
+## What's in this repo
 
-| File | What it is |
+| File | Purpose |
 |---|---|
 | Releases | `mister-control-<version>-armv7.zip`, `launchbox.db`, `ffmpeg-armhf` |
-| `release.json` | version, URLs, SHA-256s; read by the app and installer |
+| `release.json` | current version with URLs and SHA-256 checksums |
 | `db.json.zip` | update_all database |
-| `cores/db.json.zip` | update_all database for the MC cores (MC-NES) |
-| `catalog.json` | in-app Install catalogue |
-| `files/` | release split per file for the downloader |
-| `mister-control.sh` | installer |
+| `cores/db.json.zip` | update_all database for the MC cores |
+| `catalog.json` | the in-app Install catalog |
+| `files/` | the release split into single files for the downloader |
+| `mister-control.sh` | the installer |
 
 ## Notes
 
-The app listens on your LAN only. It has no account and no cloud. Set a token if other people share
-the network. A broadcast goes only to the RTMP URL you enter, and the stream key stays on the MiSTer.
-`ffmpeg-armhf` is the unmodified static build from https://johnvansickle.com/ffmpeg/ (GPL v3).
+The app is only reachable on your own network. Broadcasting sends video to the RTMP URL you
+configure and nowhere else. `ffmpeg-armhf` is an unmodified static build from
+https://johnvansickle.com/ffmpeg/ (GPL v3).

@@ -51,7 +51,7 @@ game state, such as the world, lives and score.
 
 <img src="shots/home-playing-phone.png" width="270" alt="Home on a phone with the game live in the tile">
 
-### Play on the phone
+### Play on your phone
 
 Tap the running game to open the touch gamepad. The TV picture streams above a full control pad,
 with Capture and Clip buttons on the picture.

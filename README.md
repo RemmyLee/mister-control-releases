@@ -1,10 +1,10 @@
 # MiSTer Control
 
-The second screen and controller for your [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/).
-One program runs on the MiSTer itself and serves a web app to any phone, tablet or computer on
-your network. You see the TV picture live on your phone, play with a touch gamepad, launch any
-game from your library with box art, and manage saves, cheats, screenshots, manuals and more.
-Nothing to install on a PC. No account. No cloud.
+A second screen and controller for the [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/).
+One program runs on the MiSTer and serves a web app to any phone, tablet or computer on your
+network. It shows the TV picture live on the phone, gives you a touch gamepad, launches games from
+your library with box art, and manages saves, cheats, screenshots and manuals. Nothing is
+installed on a PC. There is no account and no cloud service.
 
 ![Home on a laptop](shots/home-desktop.png)
 
@@ -34,28 +34,27 @@ The app listens on port **8110**. Open `http://<your-MiSTer-IP>:8110` in any bro
 network, for example `http://192.168.1.50:8110`.
 
 - The install script and the MiSTer's own OSD both show the address.
-- In the app, **Settings > Network and access** shows the address and a **QR code** on the TV, so
-  you can point your phone camera at the screen and open it with one tap.
-- Add it to your phone home screen ("Add to Home Screen") to use it like an app, full screen.
+- In the app, **Settings > Network and access** shows the address and a QR code on the TV. Point
+  the phone camera at it to open the app.
+- Add it to the phone home screen ("Add to Home Screen") to run it full screen.
 
 If other people share your network, set an access token (`-token`, or `MC_TOKEN` in `run.sh`). The
 app then pairs a phone with a 6-digit PIN and remembers it.
 
-## What it does
+## Features
 
 ### Home and the live picture
 
-The Home screen shows what is playing right now, with the **live TV picture inside the tile**, and
-your recent games beside it. Tap a game to launch it. On an MC core (see below), the tile also
-shows the game state, for example the world, lives and score.
+The Home screen shows what is playing now, with the live TV picture inside the tile, and your
+recent games beside it. Tap a game to launch it. On an MC core (see below), the tile also shows the
+game state, such as the world, lives and score.
 
 <img src="shots/home-playing-phone.png" width="270" alt="Home on a phone with the game live in the tile">
 
 ### Play on the phone
 
-Tap the running game to open the **touch gamepad**. The TV picture streams above a full control
-pad, with Capture and Clip buttons on the picture. Good for the couch, a second player, or a kid
-who wants a turn from the other room.
+Tap the running game to open the touch gamepad. The TV picture streams above a full control pad,
+with Capture and Clip buttons on the picture.
 
 <img src="shots/controller-phone.png" width="270" alt="Touch gamepad with the live picture">
 
@@ -78,20 +77,20 @@ saved and loaded from the phone), cheats, core options, and play activity.
 
 ### MC-NES: MiSTer Control's own NES core
 
-From **Settings > Install** you can add **MC-NES**, MiSTer Control's own build of the NES core,
-installed next to the stock one and shared with all the same games, saves and cheats. It reports
-the game's memory, CPU registers and controller state to the app **every frame**, so the game
-sheet gains a **Live** fold with the decoded values and the Home tile shows them under the picture.
+From Settings > Install you can add MC-NES, MiSTer Control's own build of the NES core, installed
+next to the stock one and sharing the same games, saves and cheats. It reports the game's memory,
+CPU registers and controller state to the app once per frame, so the game sheet gains a Live fold
+with the decoded values and the Home tile shows them under the picture.
 
 <img src="shots/settings-install-phone.png" width="270" alt="Installing the MC-NES core">
 
 ### TAS playback
 
-On MC-NES the FPGA can **play a tool-assisted speedrun on your TV**. The app matches your ROM file
-by checksum to the exact version on [TASVideos](https://tasvideos.org), lists the published runs
-for it, downloads the one you pick to the card, and the core plays the inputs frame by frame with
-the timing held by the hardware. The Library marks every game that has a matching run. You can add
-your own `.fm2` files too.
+On MC-NES the FPGA can play a tool-assisted speedrun on the TV. The app matches your ROM file by
+checksum to the exact version on [TASVideos](https://tasvideos.org), lists the published runs for
+it, downloads the one you pick to the card, and the core plays the inputs one per frame with the
+timing held by the hardware. The Library marks every game that has a matching run. You can also add
+your own `.fm2` files.
 
 <img src="shots/gamesheet-tasvideos-phone.png" width="270" alt="TASVideos runs for the running ROM">
 
@@ -100,10 +99,10 @@ your own `.fm2` files too.
 - **Album**: every screenshot the MiSTer took and every clip the app captured, in one gallery,
   tagged by system.
 - **Manuals**: the community manual catalogue (thousands of manuals across dozens of systems),
-  downloaded per game only when you ask, so the card does not fill up.
+  downloaded per game only when you ask.
 - **Saves**: list, download and upload SRAM saves, per core.
-- **Install**: a catalogue of cores, homebrew, wallpaper packs and scripts, installed with one tap
-  through the MiSTer's own downloader so update_all stays in charge of the files.
+- **Install**: a catalogue of cores, homebrew, wallpaper packs and scripts, installed through the
+  MiSTer's own downloader so update_all stays in charge of the files.
 - **TV menu editor**: the folders and shortcuts on the TV menu, in the MiSTer's own order.
 - **Quick settings**: hold the Home button for volume, mute, screenshot, the OSD, reset, and
   Bluetooth pairing, without leaving the game.

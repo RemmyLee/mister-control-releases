@@ -3,10 +3,9 @@
 MiSTer Control turns your phone into a second screen and a controller for the
 [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/).
 
-It is one program that runs on the MiSTer and hosts a web page. Open that page on your phone,
-tablet, or computer and you get the game on a screen in your hand, a touch pad to play it with, and
-your whole game library with the box art. You never install anything on a PC. There is no account
-to make and nothing talks to a cloud.
+It is a single program that runs on the MiSTer and serves a web app over your network. Load it on a
+phone and you can watch the running game and control it with an on-screen pad. Your library is there
+too, with box art. It runs on the MiSTer, not on a PC, and there is no login or server in between.
 
 ![Home on a laptop](shots/home-desktop.png)
 
@@ -18,9 +17,9 @@ This repository is where you download it. The source code for the app is not pub
    your MiSTer. Samba, FTP, or the SD card in a computer all work.
 2. On the TV, open the MiSTer menu, go to **Scripts**, and run **`mister-control`**. If you would
    rather use SSH: `sh /media/fat/Scripts/mister-control.sh`
-3. It installs itself, starts up, and tells you the address to open.
+3. It installs itself and starts, then prints the address to open.
 
-Behind the scenes the script grabs the latest build, checks it, and installs it to
+Behind the scenes the script downloads the latest build and checks it, then installs it to
 `/media/fat/mister-control/`. It starts the app now and again on every boot. It also flips two
 settings in `MiSTer.ini` and keeps a backup at `MiSTer.ini.mister-control.bak`. One,
 `log_file_entry=1`, makes the MiSTer write down which game is running so the app can tell what you
@@ -48,8 +47,8 @@ that a phone has to pair once with a 6-digit PIN.
 ### Home and the live picture
 
 Home shows the game you are playing right now, and the picture is live inside the tile. Your recent
-games sit next to it. Tap any of them to jump in. If you are on an MC core (more on that below), the
-tile even shows things like your world, lives, and score.
+games sit next to it. Tap one to switch to it. On an MC core (more on that below), the tile also
+shows the game's own state, like your lives and score.
 
 <img src="shots/home-playing-phone.png" width="270" alt="Home on a phone with the game live in the tile">
 
@@ -62,41 +61,40 @@ Clip buttons right on the screen.
 
 ### Library
 
-Look through every system on your card. Each game shows its box art, the year, who made it, and its
-genre. You can search, star the ones you love, and put games into collections. Filters let you
-narrow by first letter, region, genre, decade, or how many players it takes. Most of the art is
-already on the card. When a game is missing its cover, you can grab it from ScreenScraper using your
-own account.
+Look through every system on your card. Each game shows its box art, with the year, publisher and
+genre underneath. You can search for a game and mark it as a favorite. Games you group together
+become a collection. There are filters for the first letter, region, genre, decade, and player
+count. Most of the art is already on the card. When a game has no cover, you can pull it from
+ScreenScraper with your own account.
 
 <img src="shots/library-tas-filter-phone.png" width="270" alt="Library with box art and filters">
 
 ### Game sheet
 
-Press and hold a game to bring up its sheet. From there you can start it, restart it, star it, add
-it to a collection, pin it to the TV menu, or fix its title and year. There are handy links out to
-GameFAQs, StrategyWiki, Wikipedia, and a longplay video. When a game is running, the sheet also has
-its save state slots (save and load right from your phone), its cheats, its core options, and how
-long you have spent in it.
+Press and hold a game to bring up its sheet. From here you can start or restart it, favorite it, add
+it to a collection, pin it to the TV menu, or fix its title and year. There are links out to
+GameFAQs, StrategyWiki, Wikipedia, and a longplay video. When the game is running, the sheet also
+carries its save state slots, which you save and load from your phone, plus its cheats, its core
+options, and your play time.
 
 <img src="shots/gamesheet-cheats-phone.png" width="270" alt="Cheat switches on the game sheet"> <img src="shots/gamesheet-live-phone.png" width="270" alt="Live machine state on the game sheet">
 
 ### MC-NES, our own NES core
 
 Open **Settings > Install** and you can add MC-NES. It is our own build of the NES core that sits
-right beside the stock one and uses the same games, saves, and cheats. The difference is that it
-tells the app what the game is doing on every single frame: the memory, the CPU, the controller.
-That is what feeds the live values on the game sheet and under the Home tile.
+beside the stock one and uses the same game folder, saves and cheats. The difference is that it
+reports the game's work RAM, CPU registers and controller reads to the app every frame. That is what
+feeds the live values on the game sheet and under the Home tile.
 
 <img src="shots/settings-install-phone.png" width="270" alt="Installing the MC-NES core">
 
 ### TAS playback
 
-Here is the fun part. On MC-NES the FPGA can play back a tool-assisted speedrun on your TV. The app
-takes the checksum of your ROM, finds the exact matching version on
-[TASVideos](https://tasvideos.org), and shows you every run people have published for it. Pick one,
-it downloads to the card, and the core plays the inputs out frame by frame with the hardware keeping
-time. The Library flags every game you own that has a run available. If you have your own `.fm2`
-file, you can drop that in too.
+On MC-NES the FPGA can play back a tool-assisted speedrun on your TV. The app takes the checksum of
+your ROM and finds the matching version on [TASVideos](https://tasvideos.org), then shows you the
+runs people have published for it. Pick one and it downloads to the card. The core plays the inputs
+out frame by frame, with the hardware keeping time. The Library flags every game you own that has a
+run. You can also drop in your own `.fm2` file.
 
 <img src="shots/gamesheet-tasvideos-phone.png" width="270" alt="TASVideos runs for the running ROM">
 

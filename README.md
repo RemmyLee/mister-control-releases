@@ -19,7 +19,7 @@ sets two `MiSTer.ini` keys (backup at `MiSTer.ini.mister-control.bak`): `log_fil
 app can read the running game, and `debug=2` so it can confirm cheats. Both apply at the next core
 load. First run also downloads the game catalogue (~150 MB) and ffmpeg (~32 MB); updates keep both.
 
-## Open it
+## Accessing the web app
 
 Port **8110**: `http://<MiSTer-IP>:8110` (e.g. `http://192.168.1.50:8110`). The install script and
 the MiSTer menu both show the IP. **Settings > Network and access** shows a QR code on the TV. Use

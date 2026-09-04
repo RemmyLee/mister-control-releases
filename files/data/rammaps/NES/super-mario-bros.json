@@ -34,8 +34,9 @@
       "addr": "0x07DD",
       "size": 6,
       "enc": "digits",
-      "label": "Score (x10)",
-      "pad": 5
+      "label": "Score",
+      "pad": 5,
+      "suffix": "0"
     },
     {
       "name": "timer",
@@ -79,7 +80,7 @@
   "lines": [
     "World {world}-{level}",
     "{lives} lives, {coins} coins",
-    "Score {score}0, time {timer}"
+    "Score {score}, time {timer}"
   ],
   "notes": "Checked on MC-NES_20260903b against the TV picture 2026-09-03: world and level (1-1 from 0/0, +1), lives (card x3 read 2, x2 read 1: stored minus one), coins (0), timer (five readings 398..129), mode (0 title/demo, 1 playing), xpage/xscreen (0/40 at the start, 1/41 while walking). Score was not exercised (no points scored); its digits come from the map only. $075A is the current player's lives; in a 2 player game Luigi is controller 2."
 }

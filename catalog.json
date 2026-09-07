@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-09-03",
+ "updated": "2026-09-07",
  "items": [
   {
    "id": "mc-nes",
@@ -12,6 +12,17 @@
    "homepage": "https://github.com/RemmyLee/MC-NES",
    "db_id": "mister_control_cores",
    "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/cores/db.json.zip"
+  },
+  {
+   "id": "mc-gameboy",
+   "kind": "db",
+   "category": "cores",
+   "name": "MC-Gameboy",
+   "author": "MiSTer Control",
+   "summary": "MiSTer Control's own build of the Gameboy core (DMG, GBC, SGB), installed next to the stock one. It reports the game's memory, registers and controller state to this app every frame: live values on the game sheet and the Home screen, save-state-safe. Same games, cheats, saves and settings as the stock Gameboy core.",
+   "homepage": "https://github.com/RemmyLee/MC-Gameboy",
+   "db_id": "mister_control_gameboy",
+   "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/cores/gameboy/db.json.zip"
   },
   {
    "id": "brickboy-dmg",
@@ -501,6 +512,316 @@
      "url": "https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/ba2d6c5ceee7ec7eb335d5f6d4347f5fd02c0323/ini_settings.sh",
      "sha256": "70a991159b9321c3e932607bf386d7831ddd7e04080c49a12577e49f2ec495b9",
      "size": 49049
+    }
+   ]
+  },
+  {
+   "id": "ra-main",
+   "kind": "files",
+   "category": "cores",
+   "name": "RetroAchievements (MiSTer main)",
+   "author": "odelot",
+   "summary": "A build of MiSTer main that unlocks RetroAchievements while you play, with popups on the TV and an achievement list on F6. It replaces the stock main binary until you remove it (your copy comes back then). update_all and the downloader put the stock main back on their next run; install again after. Enter your RetroAchievements login on the Settings page after the install. Needs the RetroAchievements build of each core you want achievements on (this list).",
+   "homepage": "https://github.com/odelot/Main_MiSTer",
+   "reboot": true,
+   "files": [
+    {
+     "path": "MiSTer",
+     "zip": "https://github.com/odelot/Main_MiSTer/releases/download/v1.12.2/Main_Mister-v1.12.2.zip",
+     "zip_sha256": "d3e72f64386795e84082ba9fdf748a92d5df7e40c1c8441273f734142b39964d",
+     "zip_size": 960441,
+     "member": "Main_Mister-v1.12.2/MiSTer",
+     "sha256": "8fd8bf1e19ebbcd5f4c5682beddd584f3fb2125e45b58daba0426d3fa8fd75a8",
+     "size": 1498428
+    },
+    {
+     "path": "achievement.wav",
+     "zip": "https://github.com/odelot/Main_MiSTer/releases/download/v1.12.2/Main_Mister-v1.12.2.zip",
+     "zip_sha256": "d3e72f64386795e84082ba9fdf748a92d5df7e40c1c8441273f734142b39964d",
+     "zip_size": 960441,
+     "member": "Main_Mister-v1.12.2/achievement.wav",
+     "sha256": "e181d3e4c9a6c0b991ccec26b975b6b6be9119d0aa52726bd93babdf5abe47ca",
+     "size": 64820
+    },
+    {
+     "path": "retroachievements.cfg",
+     "zip": "https://github.com/odelot/Main_MiSTer/releases/download/v1.12.2/Main_Mister-v1.12.2.zip",
+     "zip_sha256": "d3e72f64386795e84082ba9fdf748a92d5df7e40c1c8441273f734142b39964d",
+     "zip_size": 960441,
+     "member": "Main_Mister-v1.12.2/retroachievements.cfg",
+     "sha256": "def4a1e21c5329e2499166c5b117c5379bb920ded3d8385c1221edb1f134b23a",
+     "size": 1948,
+     "keep": true
+    }
+   ]
+  },
+  {
+   "id": "ra-nes",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-NES",
+   "author": "odelot",
+   "summary": "The NES / FDS core with RetroAchievements support (validated hardcore), installed as RA-NES next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/NES_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-NES.rbf",
+     "url": "https://github.com/odelot/NES_MiSTer/releases/download/v1.4/NES.rbf",
+     "sha256": "ef13ab8cc7044a7d51503ec9ffcc7e035ef858ee0e5c9e51834a3f93dcbfb25c",
+     "size": 3272772
+    }
+   ]
+  },
+  {
+   "id": "ra-snes",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-SNES",
+   "author": "odelot",
+   "summary": "The SNES core with RetroAchievements support (validated hardcore), installed as RA-SNES next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/SNES_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-SNES.rbf",
+     "url": "https://github.com/odelot/SNES_MiSTer/releases/download/v1.2.0/SNES.rbf",
+     "sha256": "7526c4fffb0bd61e712658fbe297ef8023e41f607f161d1ebaefd30f4e36eb5f",
+     "size": 4454832
+    }
+   ]
+  },
+  {
+   "id": "ra-genesis",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-Genesis",
+   "author": "odelot",
+   "summary": "The Genesis / Mega Drive core with RetroAchievements support (validated hardcore), installed as RA-Genesis next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/MegaDrive_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-Genesis.rbf",
+     "url": "https://github.com/odelot/MegaDrive_MiSTer/releases/download/v1.1/MegaDrive.rbf",
+     "sha256": "f1ef723b200f5f1e07cd7eed0e31e99f53c7356ccc24a7da30cb85cd9548254f",
+     "size": 4305644
+    }
+   ]
+  },
+  {
+   "id": "ra-gameboy",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-Gameboy",
+   "author": "odelot",
+   "summary": "The Game Boy / Game Boy Color core with RetroAchievements support (validated hardcore), installed as RA-Gameboy next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/Gameboy_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-Gameboy.rbf",
+     "url": "https://github.com/odelot/Gameboy_MiSTer/releases/download/v1.1.0/Gameboy.rbf",
+     "sha256": "bf9c9bf18e44a1ca23e861ba9d7152400ebe8cec0693b41d8efa3e04f4aac2d6",
+     "size": 3814652
+    }
+   ]
+  },
+  {
+   "id": "ra-n64",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-N64",
+   "author": "odelot",
+   "summary": "The N64 core with RetroAchievements support (validated hardcore), installed as RA-N64 next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/N64_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-N64.rbf",
+     "url": "https://github.com/odelot/N64_MiSTer/releases/download/v1.0.0/N64.rbf",
+     "sha256": "6a190bb3d1de8e7fbd8df242e3b4b1806dc9b9862736e5204ea9779b024639c1",
+     "size": 3899588
+    }
+   ]
+  },
+  {
+   "id": "ra-psx",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-PSX",
+   "author": "odelot",
+   "summary": "The PlayStation core with RetroAchievements support (validated hardcore), installed as RA-PSX next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/PSX_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-PSX.rbf",
+     "url": "https://github.com/odelot/PSX_MiSTer/releases/download/v1.0.0/PSX.rbf",
+     "sha256": "d06edc07c659ef56b13682caf96d11b34239244fec18dd1f9d2af8eb28230fb0",
+     "size": 4374292
+    }
+   ]
+  },
+  {
+   "id": "ra-sms",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-SMS",
+   "author": "odelot",
+   "summary": "The Master System / Game Gear core with RetroAchievements support (hardcore wired, pending validation), installed as RA-SMS next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/SMS_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-SMS.rbf",
+     "url": "https://github.com/odelot/SMS_MiSTer/releases/download/poc-v4/SMS.rbf",
+     "sha256": "d5bd3f1562e88f102b0574783b86ce58220a9e37241f9c09a4368446d11854a8",
+     "size": 4116088
+    }
+   ]
+  },
+  {
+   "id": "ra-gba",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-GBA",
+   "author": "odelot",
+   "summary": "The Game Boy Advance core with RetroAchievements support (hardcore wired, pending validation), installed as RA-GBA next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/GBA_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-GBA.rbf",
+     "url": "https://github.com/odelot/GBA_MiSTer/releases/download/poc-v5/GBA.rbf",
+     "sha256": "af75930819c758d5ca096a4e2d6b1597570837624f865835fd94e94c568ad430",
+     "size": 4302484
+    }
+   ]
+  },
+  {
+   "id": "ra-megacd",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-MegaCD",
+   "author": "odelot",
+   "summary": "The Mega CD / Sega CD core with RetroAchievements support (hardcore wired, pending validation), installed as RA-MegaCD next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/MegaCD_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-MegaCD.rbf",
+     "url": "https://github.com/odelot/MegaCD_MiSTer/releases/download/poc-v2/MegaCD.rbf",
+     "sha256": "ca7ae05f164a8e99110d95020636dab7d3450d72e405fe932fa3b412165ff479",
+     "size": 4198532
+    }
+   ]
+  },
+  {
+   "id": "ra-turbografx16",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-TurboGrafx16",
+   "author": "odelot",
+   "summary": "The TurboGrafx-16 / PC Engine (with CD) core with RetroAchievements support (hardcore wired, pending validation), installed as RA-TurboGrafx16 next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/TurboGrafx16_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-TurboGrafx16.rbf",
+     "url": "https://github.com/odelot/TurboGrafx16_MiSTer/releases/download/poc-v2/TurboGrafx16.rbf",
+     "sha256": "a682fc78db87d378d88f78923c62a28cac2dab8849f156596a9d7c89daf9fe6c",
+     "size": 4240560
+    }
+   ]
+  },
+  {
+   "id": "ra-s32x",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-S32X",
+   "author": "odelot",
+   "summary": "The Sega 32X core with RetroAchievements support (hardcore wired, pending validation), installed as RA-S32X next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/S32X_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-S32X.rbf",
+     "url": "https://github.com/odelot/S32X_MiSTer/releases/download/poc-v2/S32X.rbf",
+     "sha256": "a724f74b9c5199d5159e78acbb1a94dec7f291b08c963afb8fc70124929d2bd5",
+     "size": 4241788
+    }
+   ]
+  },
+  {
+   "id": "ra-virtualboy",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-VirtualBoy",
+   "author": "odelot",
+   "summary": "The Virtual Boy core with RetroAchievements support (hardcore wired, pending validation), installed as RA-VirtualBoy next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/VirtualBoy_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-VirtualBoy.rbf",
+     "url": "https://github.com/odelot/VirtualBoy_MiSTer/releases/download/poc/VirtualBoy.rbf",
+     "sha256": "1e05666ce7c7d63dd83a60b62d156e7c3966a5b851d60a9e295b0399c58aed47",
+     "size": 4382292
+    }
+   ]
+  },
+  {
+   "id": "ra-neogeo",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-NeoGeo",
+   "author": "odelot",
+   "summary": "The Neo Geo (MVS, AES, CD) core with RetroAchievements support (casual only), installed as RA-NeoGeo next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/NeoGeo_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-NeoGeo.rbf",
+     "url": "https://github.com/odelot/NeoGeo_MiSTer/releases/download/poc-v2/NeoGeo.rbf",
+     "sha256": "30e6e6f312ce9a33c46204814b3c96fe683943c0d13b1dd6c45724ce8a616bf7",
+     "size": 3910604
+    }
+   ]
+  },
+  {
+   "id": "ra-atari7800",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-Atari7800",
+   "author": "odelot",
+   "summary": "The Atari 2600 and 7800 core with RetroAchievements support (casual only), installed as RA-Atari7800 next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/Atari7800_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-Atari7800.rbf",
+     "url": "https://github.com/odelot/Atari7800_MiSTer/releases/download/poc-v2/Atari7800.rbf",
+     "sha256": "8fb5e313c26a0e452c178d751dc0b00c53913650c38e9267c65ce75548ade3fd",
+     "size": 3591972
+    }
+   ]
+  },
+  {
+   "id": "ra-saturn",
+   "kind": "files",
+   "category": "cores",
+   "name": "RA-Saturn",
+   "author": "odelot",
+   "summary": "The Sega Saturn core with RetroAchievements support (casual only), installed as RA-Saturn next to the stock core. With the RetroAchievements main installed, Play uses this build for the system when Settings > RetroAchievements says so.",
+   "homepage": "https://github.com/odelot/Saturn_MiSTer",
+   "needs": "RetroAchievements (MiSTer main), from this list",
+   "files": [
+    {
+     "path": "_Console/RA-Saturn.rbf",
+     "url": "https://github.com/odelot/Saturn_MiSTer/releases/download/poc/Saturn.rbf",
+     "sha256": "1cbe77616c5d57bb21bf892a5ed3c44e2c66c44f1875a46398cb364a25000a67",
+     "size": 4641912
     }
    ]
   }

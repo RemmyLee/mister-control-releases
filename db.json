@@ -213,8 +213,8 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.7.0/launchbox.db"
   },
   "mister-control/data/rammaps/GAMEBOY/super-mario-land.json": {
-   "hash": "af12b6b0976c8cb8b47471906d73cd6c",
-   "size": 1425,
+   "hash": "26c788781f57556eead39913bcd43031",
+   "size": 2078,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/rammaps/GAMEBOY/super-mario-land.json"
   },
   "mister-control/data/rammaps/NES/super-mario-bros.json": {
@@ -228,7 +228,7 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.7.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "035d2cf5166b43e747e40fde68c7a2e4",
+   "hash": "fd9ad59eadd21ca882f544beab569fdc",
    "reboot": true,
    "size": 15335584,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
@@ -275,6 +275,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788817486,
+ "timestamp": 1788819167,
  "v": 1
 }

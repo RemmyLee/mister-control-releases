@@ -212,6 +212,11 @@
    "size": 156352512,
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.7.0/launchbox.db"
   },
+  "mister-control/data/rammaps/GAMEBOY/super-mario-land.json": {
+   "hash": "af12b6b0976c8cb8b47471906d73cd6c",
+   "size": 1425,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/data/rammaps/GAMEBOY/super-mario-land.json"
+  },
   "mister-control/data/rammaps/NES/super-mario-bros.json": {
    "hash": "0c30ad372adad5722900a287261284cc",
    "size": 1976,
@@ -223,9 +228,9 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.7.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "67d25bd30e67991f3720bc5385f7faad",
+   "hash": "035d2cf5166b43e747e40fde68c7a2e4",
    "reboot": true,
-   "size": 13959328,
+   "size": 15335584,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
   },
   "mister-control/restart.sh": {
@@ -234,22 +239,22 @@
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/restart.sh"
   },
   "mister-control/run.sh": {
-   "hash": "1d67f26c8a44d08d28e879ab23740b83",
-   "size": 1554,
+   "hash": "53dbe2a5095949bac7daf18a259b0acd",
+   "size": 1782,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
   },
-  "mister-control/web/assets/index-CPxDTNo2.js": {
-   "hash": "c2c3621f5d4a59cfd2ae92b8a7de6c2b",
-   "size": 339900,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-CPxDTNo2.js"
+  "mister-control/web/assets/index-BEB_Y4T_.js": {
+   "hash": "3f36dd31efb2692f73d3a9ee86ab61eb",
+   "size": 383569,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-BEB_Y4T_.js"
   },
-  "mister-control/web/assets/index-DDZPnLFs.css": {
-   "hash": "904025c665d777e5089c923bd5c48f34",
-   "size": 74825,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DDZPnLFs.css"
+  "mister-control/web/assets/index-CzZVxOJS.css": {
+   "hash": "504a206625ff689b2be87473c3197994",
+   "size": 79431,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-CzZVxOJS.css"
   },
   "mister-control/web/index.html": {
-   "hash": "0b8753631e03bca68370d3df57c36501",
+   "hash": "d123b7c967926f70d133fb89ba3e46c3",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -265,10 +270,11 @@
   "mister-control/data": {},
   "mister-control/data/confstr": {},
   "mister-control/data/rammaps": {},
+  "mister-control/data/rammaps/GAMEBOY": {},
   "mister-control/data/rammaps/NES": {},
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788795108,
+ "timestamp": 1788817486,
  "v": 1
 }

@@ -1,0 +1,36 @@
+{
+  "system": "GAMEBOY",
+  "title": "Super Mario Land",
+  "crc": [
+    "90776841"
+  ],
+  "base": "0xC000",
+  "source": "https://github.com/kaspermeerts/supermarioland/blob/618d00ed6c33/wram.asm (labels wScore, wLives, wGameTimer)",
+  "verified": "2026-09-07",
+  "fields": [
+    {
+      "name": "score",
+      "addr": "0xC0A0",
+      "size": 3,
+      "enc": "bcd",
+      "label": "Score"
+    },
+    {
+      "name": "lives",
+      "addr": "0xDA15",
+      "label": "Lives"
+    },
+    {
+      "name": "timer",
+      "addr": "0xDA01",
+      "size": 2,
+      "enc": "bcdle",
+      "label": "Time"
+    }
+  ],
+  "lines": [
+    "Score {score}",
+    "{lives} lives, time {timer}"
+  ],
+  "notes": "Checked on MC-Gameboy_20260908 against the live picture 2026-09-07 with the (World) ROM, CRC 90776841 (the disassembly is Rev A; these three addresses held). Score: 200 on screen read 00 02 00 (packed BCD, high byte first). Lives: MARIOx02 read 2, x01 after a death read 1; not exercised above 9. Timer: 396 on screen read DA00 14, DA01 96, DA02 03; DA00 is the frame sub-counter, DA01 the BCD tens and ones, DA02 the hundreds; 400, 370 and the reset to 400 after a death matched. Not in this map because they live in HRAM, which the core's shadow copy does not cover (WRAM $C000-$DFFF only): world and level $FFB4, coins $FFFA, power state $FF99, game state $FFB3. $C0A8 holds the continue point (0x11 at 1-1), not the current level."
+}

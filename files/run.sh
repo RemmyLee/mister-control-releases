@@ -13,6 +13,13 @@ echo $$ > "$LOOP_PID"
 # Optional secrets (ScreenScraper credentials, etc.), not in git. Sourced so the
 # MC_SS_* env vars reach the binary. Absent on a build without the feature.
 [ -f "$DIR/screenscraper.env" ] && . "$DIR/screenscraper.env"
+# Optional operator overrides (MC_LISTEN, MC_TLS_LISTEN, MC_MEMLIMIT_MB, MC_PPROF=1 ...),
+# one KEY=value per line, exported to the binary. Absent on a normal install.
+if [ -f "$DIR/env" ]; then
+	set -a
+	. "$DIR/env"
+	set +a
+fi
 
 # Keep the log from growing without bound across restarts (no logrotate here).
 if [ -f "$LOG" ] && [ "$(wc -c < "$LOG")" -gt 4000000 ]; then

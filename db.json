@@ -223,7 +223,7 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.7.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "1940eb7594b4159936fd1968d3f0d0d8",
+   "hash": "67d25bd30e67991f3720bc5385f7faad",
    "reboot": true,
    "size": 13959328,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
@@ -234,14 +234,14 @@
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/restart.sh"
   },
   "mister-control/run.sh": {
-   "hash": "e3fe786f556ce20b5bf04762cf4b5e3c",
-   "size": 1056,
+   "hash": "1d67f26c8a44d08d28e879ab23740b83",
+   "size": 1554,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/run.sh"
   },
-  "mister-control/web/assets/index-B4z90HM9.js": {
-   "hash": "962ae20767ae014f85ad9c8abb6d6164",
-   "size": 339089,
-   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-B4z90HM9.js"
+  "mister-control/web/assets/index-CPxDTNo2.js": {
+   "hash": "c2c3621f5d4a59cfd2ae92b8a7de6c2b",
+   "size": 339900,
+   "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-CPxDTNo2.js"
   },
   "mister-control/web/assets/index-DDZPnLFs.css": {
    "hash": "904025c665d777e5089c923bd5c48f34",
@@ -249,7 +249,7 @@
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/assets/index-DDZPnLFs.css"
   },
   "mister-control/web/index.html": {
-   "hash": "c937dabb8aa43904d4e78eb6d2637e14",
+   "hash": "0b8753631e03bca68370d3df57c36501",
    "size": 793,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/web/index.html"
   },
@@ -269,6 +269,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788502109,
+ "timestamp": 1788795108,
  "v": 1
 }

@@ -19,11 +19,22 @@ if [ -f "$LOG" ] && [ "$(wc -c < "$LOG")" -gt 4000000 ]; then
 	mv -f "$LOG" "$LOG.1"
 fi
 
+# Every exit is recorded for the app to report (Notifications) at its next
+# start; the app deletes the file once it has read it.
+RESTARTS="$DIR/restarts.log"
+
+fast=0
 while :; do
 	echo "=== starting $(date)" >> "$LOG"
+	start=$(date +%s)
 	"$BIN" >> "$LOG" 2>&1
 	code=$?
+	now=$(date +%s)
 	echo "=== exited with $code $(date)" >> "$LOG"
-	# A fast crash loop should not spin the CPU on a 2-core ARM board.
-	sleep 3
+	echo "$now $code" >> "$RESTARTS"
+	# A fast crash loop should not spin the CPU on a 2-core ARM board: after
+	# three exits inside a minute, wait 30 s between tries (9,798 restarts at
+	# 3 s each kept the box at load 6 for two days, 2026-09-07).
+	if [ $((now - start)) -lt 60 ]; then fast=$((fast + 1)); else fast=0; fi
+	if [ $fast -ge 3 ]; then sleep 30; else sleep 3; fi
 done

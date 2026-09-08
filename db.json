@@ -228,7 +228,7 @@
    "url": "https://github.com/RemmyLee/mister-control-releases/releases/download/v0.7.0/ffmpeg-armhf"
   },
   "mister-control/mister-control": {
-   "hash": "f190770951f439dda306b5ca5df13a19",
+   "hash": "5455e276e58fd51fd71215e8419d0855",
    "reboot": true,
    "size": 15401120,
    "url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/files/mister-control"
@@ -275,6 +275,6 @@
   "mister-control/web": {},
   "mister-control/web/assets": {}
  },
- "timestamp": 1788844821,
+ "timestamp": 1788848313,
  "v": 1
 }

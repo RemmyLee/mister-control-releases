@@ -2,15 +2,15 @@
  "db_id": "mister_control_gameboy",
  "db_url": "https://raw.githubusercontent.com/RemmyLee/mister-control-releases/main/cores/gameboy/db.json.zip",
  "files": {
-  "_Console/MC-Gameboy_20260908c.rbf": {
-   "hash": "be96e7c2b49f740ff3beb80590adcca3",
-   "size": 4020044,
-   "url": "https://raw.githubusercontent.com/RemmyLee/MC-Gameboy/0236759ee1d0b2c640499b2e7f46e27f1bc326d6/releases/MC-Gameboy_20260908c.rbf"
+  "_Console/MC-Gameboy_20260908d.rbf": {
+   "hash": "44fec8d6e64bae446b21185afff769e8",
+   "size": 4013048,
+   "url": "https://raw.githubusercontent.com/RemmyLee/MC-Gameboy/2b5e8aa0afb140763d4f67a1904d4aa55f8586ba/releases/MC-Gameboy_20260908d.rbf"
   }
  },
  "folders": {
   "_Console": {}
  },
- "timestamp": 1788821972,
+ "timestamp": 1788829202,
  "v": 1
 }
